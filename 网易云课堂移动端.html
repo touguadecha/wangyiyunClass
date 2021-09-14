@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        
+        .head{
+            line-height: 48px;
+            display: flex;
+        }
+        .head .left{
+            flex: 2;
+        }
+        .head .left>img{
+            vertical-align: middle;
+            padding-left: 15px;
+        }
+        .head .left>span{
+            color: orangered;
+            font-size: 12px;
+            padding: 2px 5px 2px 7px;
+            border: 1px solid orangered;
+            border-radius: 15px;
+        }
+        .head .right{
+            text-align: right;
+            flex: 1;
+        }
+        .head .right>img{
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .menu{
+            display: table;
+            width: 92%;
+            margin: 0 auto;
+            padding-top: 20px;
+            font-size: 0;
+            background: #fff;
+        }
+        .menu dl{
+            display: inline-block;
+            margin-bottom: 20px;
+            width: 25%;
+            text-align: center;
+        }
+        .menu dl dd{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .cxhk h3{
+            padding: 20px 0 15px 20px;
+        }
+        .cxhk dl{
+            margin-bottom: 30px;
+        }
+        .cxhk>.content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .cxhk>.content>dl.no1{
+            flex-basis: 360px;
+        }
+        .cxhk>.content>dl dd{
+            max-width: 175px;
+        }
+        .cxhk>.content>dl dd+dd{
+            color: orangered;
+        }
+        .zt img{
+            margin-bottom: 10px;
+        }
+        .footer{
+            width: 100%;
+            display: flex;
+            border-top: 1px solid rgb(209, 207, 207);
+            background: #fff;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .footer dl{
+            padding-top: 10px;
+            flex: 1;
+            text-align: center;
+            font-size: 12px;
+            color: #3C4A55;
+        }
+        .box{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="left">
+            <img src="./imgs/logo.png" alt="">
+            <span>App查看</span>
+        </div>
+        <div class="right">
+            <img src="./imgs/head-search.png" alt="">
+        </div>
+    </div>
+    <div class="menu">
+        <dl>
+            <dt><img src="./imgs/menu1.png" alt=""></dt>
+            <dd>微专业</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu2.png" alt=""></dt>
+            <dd>职场提升</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu3.png" alt=""></dt>
+            <dd>编程开发</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu4.png" alt=""></dt>
+            <dd>人工智能</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu5.png" alt=""></dt>
+            <dd>产品与运营</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu6.png" alt=""></dt>
+            <dd>设计创意</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu7.png" alt=""></dt>
+            <dd>电子商务</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/menu8.png" alt=""></dt>
+            <dd>语言学习</dd>
+        </dl>
+    </div>
+    <div class="cxhk">
+        <h3>畅销好课</h3>
+        <div class="content">
+            <dl>
+                <dt><img src="./imgs/cxhk1.png" alt=""></dt>
+                <dd>听得懂的金融思维课</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk2.png" alt=""></dt>
+                <dd>能帮你赚到钱的50节商业思维提升课</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk3.png" alt=""></dt>
+                <dd>25堂通识阅读课 带你打破知识边界</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk4.png" alt=""></dt>
+                <dd>数码单反摄影高手速成</dd>
+                <dd>￥129</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk5.png" alt=""></dt>
+                <dd>如何于老板有效沟通合作</dd>
+                <dd>￥199</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk6.png" alt=""></dt>
+                <dd>和何家教练一起学演讲</dd>
+                <dd>￥99</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cxhk zt">
+        <h3>专题</h3>
+        <div class="content">
+            <img src="./imgs/zt1.png" alt="">
+            <img src="./imgs/zt2.png" alt="">
+            <img src="./imgs/zt3.png" alt="">
+        </div>
+    </div>
+    <div class="cxhk">
+        <h3>职场提升</h3>
+        <div class="content">
+            <dl>
+                <dt><img src="./imgs/cxhk1.png" alt=""></dt>
+                <dd>轻松思考</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk2.png" alt=""></dt>
+                <dd>掌握六节职场礼仪为自己加分</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk3.png" alt=""></dt>
+                <dd>重铸你喜爱的人生</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk4.png" alt=""></dt>
+                <dd>14堂课让你拥有逻辑思维</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk5.png" alt=""></dt>
+                <dd>TTT培训师实战精品课</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk6.png" alt=""></dt>
+                <dd>瑞安博士的《人类如何决策课》</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cxhk">
+        <h3>办公效率</h3>
+        <div class="content">
+            <dl class="no1">
+                <dt><img src="./imgs/big1.png" alt=""></dt>
+                <dd>向《经济学人》学图表</dd>
+                <dd>￥360</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk2.png" alt=""></dt>
+                <dd>交互式PPT</dd>
+                <dd>￥199</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk3.png" alt=""></dt>
+                <dd>Excel商业表修炼秘籍</dd>
+                <dd style="color: palegreen;">免费</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk4.png" alt=""></dt>
+                <dd>Excel+PPT+Word修炼营小白变高手</dd>
+                <dd>￥499</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk5.png" alt=""></dt>
+                <dd>表格之道(专业版)</dd>
+                <dd>￥99</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cxhk">
+        <h3>语言留学</h3>
+        <div class="content">
+            <dl class="no1">
+                <dt><img src="./imgs/big1.png" alt=""></dt>
+                <dd>向《经济学人》学图表</dd>
+                <dd>￥360</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk2.png" alt=""></dt>
+                <dd>交互式PPT</dd>
+                <dd>￥199</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk3.png" alt=""></dt>
+                <dd>Excel商业表修炼秘籍</dd>
+                <dd style="color: palegreen;">免费</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk4.png" alt=""></dt>
+                <dd>Excel+PPT+Word修炼营小白变高手</dd>
+                <dd>￥499</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk5.png" alt=""></dt>
+                <dd>表格之道(专业版)</dd>
+                <dd>￥99</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cxhk">
+        <h3>个人理财</h3>
+        <div class="content">
+            <dl class="no1">
+                <dt><img src="./imgs/big1.png" alt=""></dt>
+                <dd>向《经济学人》学图表</dd>
+                <dd>￥360</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk2.png" alt=""></dt>
+                <dd>交互式PPT</dd>
+                <dd>￥199</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk3.png" alt=""></dt>
+                <dd>Excel商业表修炼秘籍</dd>
+                <dd style="color: palegreen;">免费</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk4.png" alt=""></dt>
+                <dd>Excel+PPT+Word修炼营小白变高手</dd>
+                <dd>￥499</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk5.png" alt=""></dt>
+                <dd>表格之道(专业版)</dd>
+                <dd>￥99</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cxhk">
+        <h3>畅销好课</h3>
+        <div class="content">
+            <dl>
+                <dt><img src="./imgs/cxhk1.png" alt=""></dt>
+                <dd>听得懂的金融思维课</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk2.png" alt=""></dt>
+                <dd>能帮你赚到钱的50节商业思维提升课</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk3.png" alt=""></dt>
+                <dd>25堂通识阅读课 带你打破知识边界</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk4.png" alt=""></dt>
+                <dd>数码单反摄影高手速成</dd>
+                <dd>￥129</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk5.png" alt=""></dt>
+                <dd>如何于老板有效沟通合作</dd>
+                <dd>￥199</dd>
+            </dl>
+            <dl>
+                <dt><img src="./imgs/cxhk6.png" alt=""></dt>
+                <dd>和何家教练一起学演讲</dd>
+                <dd>￥99</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="box"></div>
+    <div class="footer">
+        <dl>
+            <dt><img src="./imgs/footer1.png" alt=""></dt>
+            <dd>首页</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/footer2.png" alt=""></dt>
+            <dd>我的学习</dd>
+        </dl>
+        <dl>
+            <dt><img src="./imgs/footer3.png" alt=""></dt>
+            <dd>账号</dd>
+        </dl>
+    </div>
+</body>
+</html>
